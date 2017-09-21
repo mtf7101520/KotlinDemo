@@ -7,7 +7,6 @@ import android.text.TextUtils
  */
 
 class KotlinStringUtil {
-
     //双重锁的单例，volatile通俗的讲就是可以让这个执行有序，就是当instance = new KotlinStringUtil(); 线程A去拿这个instance的时候必须要new KotlinStringUtil()
     // 初始化成功之后，再赋值给instance,其他线程在看到instance的时候如果是null，就说明new KotlinStringUtil()初始化还没有成功。这样能确保在其他线程拿到的
     // instance是正确的 如果少了这个关键字，之后的所有instance==null的判断都是有问题的
