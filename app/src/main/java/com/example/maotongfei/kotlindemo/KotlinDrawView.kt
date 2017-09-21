@@ -36,7 +36,6 @@ class KotlinDrawView: View {
         init()
     }
 
-
     private fun init() {
         //kotlin里面没有new 关键字,创建实例直接可以用类名
         mPaint = Paint()
